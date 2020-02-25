@@ -15,12 +15,6 @@ public class EnrichHeaderWithEventType<R extends ConnectRecord<R>> implements Tr
 
     private EnrichHeaderConfig config;
 
-    /**
-     * This method is invoked when a change is made on the outbox schema.
-     *
-     * @param sourceRecord
-     * @return
-     */
     public R apply(R sourceRecord) {
         Struct kStruct = (Struct) sourceRecord.value();
         String databaseOperation = kStruct.getString("op");
