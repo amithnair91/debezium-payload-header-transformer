@@ -11,7 +11,7 @@ import org.apache.kafka.connect.transforms.Transformation;
 
 import java.util.Map;
 
-public class EnrichHeaderWithEventType<R extends ConnectRecord<R>> implements Transformation<R> {
+public class EnrichHeaderWithFieldsFromPayload<R extends ConnectRecord<R>> implements Transformation<R> {
 
     private EnrichHeaderConfig config;
 
