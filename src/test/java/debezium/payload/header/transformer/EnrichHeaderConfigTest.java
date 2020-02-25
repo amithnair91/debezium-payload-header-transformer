@@ -3,8 +3,6 @@
  */
 package debezium.payload.header.transformer;
 
-public class Library {
-    public boolean someLibraryMethod() {
-        return true;
-    }
+public class EnrichHeaderConfigTest {
+
 }
